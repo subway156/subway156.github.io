@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
     /*padding:0;
-    margin:0      
+    margin:0     
     */
 }
 body {
-    background:url(Images/bears2.jpg);
+    background:url(Images/bears2.jpg); 
     font-family: Arial, Helvetica, sans-serif;
 }
 
