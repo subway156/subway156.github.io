@@ -37,19 +37,18 @@ header, section, footer {
     justify-content: space-between;
 }
 
-nav li {
+nav ul {
     list-style-type: none;
-    float: left;
-    padding: 3px;
+    flex:auto;
+
 }
 
-nav a {
+nav li {
     background: lightcyan;
     color:black;
     text-decoration: none;
     list-style-type: none;
-    padding: 10px;
-    border-radius: 10px;
+    display: flex;
 
 }
 
@@ -60,6 +59,16 @@ nav a:hover {
 @media (min-width:800px) {
     .twocolumns, .threecolumns, .images, .nav li {
         display: flex
+    }
+}
+
+@media all and (max-width:800px) {
+    .nav ul {
+        flex-direction: center;
+    }
+
+    .nav ul li {
+        text-align: center;
     }
 }
 
