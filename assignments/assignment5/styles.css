@@ -13,6 +13,7 @@ div {
     border-radius: 10px;
     background: rgb(143, 211, 196);
     align-items: center;
+    justify-content: center;
    
 
 
@@ -24,9 +25,7 @@ div {
 }
 
 #title {
-    
-    align-self: flex-start;
-    flex-direction: center;
+    max-width: 50%;
 
 }
 
