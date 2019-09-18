@@ -13,20 +13,18 @@ div {
     border-radius: 10px;
     background: rgb(143, 211, 196);
     align-items: center;
+    justify-content: center;
    
 
 
 }
 
 #div {
-    flex-direction: center;
-    align-self: flex-end;
+    max-width: 50%;
 }
 
 #title {
-    
-    align-self: flex-start;
-    flex-direction: center;
+    max-width: 50%;
 
 }
 
