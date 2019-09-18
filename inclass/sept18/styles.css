@@ -1,0 +1,22 @@
+.col1of3 {
+    background: lightblue;
+    padding: 10px;
+    flex-basis: 30%;
+}
+
+.resultRow {
+    background: lightgoldenrodyellow;
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .threecol {
+        display: flex;
+        justify-content: space-between;
+    }
+}
