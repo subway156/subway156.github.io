@@ -5,86 +5,92 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-a {
-    color:black;
+/*Header */
+#main-header {
+    color:white;
+    background: black;
+
 }
 
-.header {
-    background:#73020A;
-    text-align:left;
-    padding:10px;
-    color: white;
+#main-header-top {
+    padding: 0 40px;
 }
 
-/*Navigation bar*/
-.navbar ul {
-    display:flex;
-    justify-content: space-around;
-    font-size:18px;
-    list-style-type: none;
+#main-nav {
+    background: #73000A;
 }
 
-.navbar li {
-    flex:auto;  
-    background:#73020A;
-    padding:10px;
-    text-align:center;
-    color: white;
-}
-
-.navbar li:hover {
-    background: #570108;
-}
-
-.navbar li a {
+#main-header a {
     color: white;
     text-decoration: none;
+    display: flex;
+
 }
 
-.articles {
-    padding:10px;
+#main-header img {
+    margin-right: 10px;
 }
 
-.article {
+/*Nav */
+
+#main-nav ul {
+    list-style-type: none;
+
+}
+
+#main-nav li {
+    padding: 10px;  
+    font-size:18px;
+}
+
+/* Content */
+
+#main-content {
     padding: 20px;
-    flex-basis:31%;
+}
+.col1to4of5 {
+    flex-basis: 75%;
 }
 
-#hamburger div {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-#hamburger {
-    display: none;
+.col5of5 {
+    flex-basis: 20%;
 }
 
+.sc-article {
+    margin: 20px 0;
+    
+}
+
+.sc-article img {
+    margin-right: 20px;
+}
+/*Banner Picture */
+
+#banner {
+    display: flex;
+    justify-content: center;
+}
+
+/* Fonts Styles */
+
+h2 {
+    color: #73000A;
+    font-size: 35x;
+}
 
 @media (min-width: 900px) {
-    .articles, .main-section {
-        display:flex;
-        justify-content:space-around;
-    }
-}
-
-@media all and (max-width:500px){
-    .navbar ul {
-        flex-direction:column;
+    #main-nav ul {
+        display: flex;
+        justify-content: space-evenly;
     }
 
-    .navbar ul li {
-        text-align:center;
-    }
-    #hamburger {
-        display:block;
+    #main-content-junior {
+        display: flex;
+        justify-content: space-between;
     }
 
-    #navitems {
-        display:none;
+    .sc-article {
+        display: flex;
+        justify-content: space-between;
     }
-}
-
-#navitems.hidden {
-    display:none;
 }
