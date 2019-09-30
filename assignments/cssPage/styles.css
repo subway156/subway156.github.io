@@ -14,7 +14,6 @@ a {
     text-align:left;
     padding:10px;
     color: white;
-    font
 }
 
 /*Navigation bar*/
@@ -47,58 +46,8 @@ a {
 }
 
 .article {
-    background-color: #abc;
     padding: 20px;
     flex-basis:31%;
-}
-
-.article:nth-child(1){
-    background:#E0FFFF;
-}
-
-.article:nth-child(2){
-    background:	#FFE4E1;
-}
-
-.article:nth-child(3){
-    background:#cefdce;
-}
-
-.main-section {
-    padding:10px;
-}
-
-.main-content {
-    padding:10px;
-    flex:3;
-    background:	#fffce6;
-}
-
-.sidebar {
-    padding:10px;
-    flex:1;
-    background:#fffacd;
-}
-
-.sidebar li {
-    list-style-type:none;
-}
-
-.sidebar a {
-    text-decoration:none;
-}
-
-.images {
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding:10px;
-}
-
-.footer {
-    background:#deaeea;
-    padding:10px;
-    text-align:center;
 }
 
 #hamburger div {
@@ -110,18 +59,7 @@ a {
 #hamburger {
     display: none;
 }
-error {
-    color: red;  
-}
 
-button {
-    padding: 5px;
-    margin-bottom: 10px;
-}
-input {
-    padding: 5px;
-    background: lightblue;
-}
 
 @media (min-width: 900px) {
     .articles, .main-section {
