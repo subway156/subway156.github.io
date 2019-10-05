@@ -18,7 +18,7 @@ while (num <= 10) {
 
 function displayLinks() {
    let links = document.getElementById('links')
-
+    
     for(let i=1; i<=5; i++) {
         console.log(i);
 
