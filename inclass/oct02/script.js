@@ -52,7 +52,6 @@ function multiply() {
 window.onload = function() {
     this.displayCount();
     this.displayLinks();
-    this.multiply();
 
     let multBtn = document.getElementById("mult-btn")
     multBtn.onclick = multiply
