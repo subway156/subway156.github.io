@@ -5,7 +5,11 @@ function lottery(){
     let lottoNum = document.getElementsByClassName("num-txt")
     
 
-    let winningNum = [Math.floor(Math.random()*9+1), Math.floor(Math.random()*9+1), Math.floor(Math.random()*9+1), Math.floor(Math.random()*9+1), Math.floor(Math.random()*9+1)]
+    let winningNum = [Math.floor(Math.random()*9+1),
+        Math.floor(Math.random()*9+1),
+        Math.floor(Math.random()*9+1),
+        Math.floor(Math.random()*9+1),
+        Math.floor(Math.random()*9+1)]
     let winningNumString = ""
     for(let i=0; i<lottoNum.length; i++) {
         winningNumString += winningNum[i].toString()
