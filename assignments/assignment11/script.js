@@ -1,35 +1,57 @@
-function lottery(){
-    let test = document.createElement("span")
+class Book {
+    constructor(name, author, genre, datePub, rating){
+        this._name = name
+        this._author = author
+        this._genre = genre
+        this._datePub = datePub
+        this._rating = rating
+    }
 
+    getName() {
+        return this._name
+    }
 
-    let lottoNum = document.getElementsByClassName("num-txt")
-    
+    getAuthor() {
+        return this._author
+    }
 
-    let winningNum = [Math.floor(Math.random()*9+1), Math.floor(Math.random()*9+1), Math.floor(Math.random()*9+1), Math.floor(Math.random()*9+1), Math.floor(Math.random()*9+1)]
-    let winningNumString = ""
-    for(let i=0; i<lottoNum.length; i++) {
-        winningNumString += winningNum[i].toString()
-        if(winningNum[i]==lottoNum[i]){
+    getGenre() {
+        return this._genre
+    }
 
-        }
-    }  
-    document.getElementById("num-display").innerHTML = winningNumString
-    document.getElementById("message-txt").innerHTML = "Better luck next time"
+    getRating() {
+        return this._rating
+    }
 
-
+    getDate() {
+        return this._datePub
+    }
 }
 
-function quotes(){
-    let quoteBox = ["The unhappy derive comfort from the misfortunes of others.— Aesop", "It's been my experience that you can nearly always enjoy things if you make up your mind firmly that you will. — L.M. Montgomery", "Life is really simple, but we insist on making it complicated.", "When we are in love we seem to ourselves quite different from what we were before.", "Life without love is like a tree without blossoms or fruit." ]
-    let quoteTxt = document.getElementById("quote-txt")
-    quoteTxt.innerHTML = quoteBox[Math.floor(Math.random()*4+1)]
+function displayBooks() {  
+
+    let bookList = [] 
+    bookList.push(new Book("2666", "Robert Balano", "Contemporary Fiction", 2003, "5 stars"))
+    bookList.push(new Book("All about Love", "Bell Hooks", "Romance", 2000, "3 stars"))
+    bookList.push(new Book("To Kill a Mockingbird", "Robert Balano", "Contemporary Fiction", 2003, "5 stars"))
+    bookList.push(new Book("Harry Potter and the Goblet of Fire", "Robert Balano", "Contemporary Fiction", 2003, "5 stars"))
+    bookList.push(new Book("The Hunger Games", "Robert Balano", "Contemporary Fiction", 2003, "5 stars"))
+
+    let imgs = document.getElementsByClassName("bookCovers")
+    for(let i=0; i<imgs.length; i++) {
+        
+        let span = document.createElement("span")
+        imgs[i].after(span)
+        span.innerHTML = `${bookList[i].getName()} by ${bookList[i].getAuthor()}, genre: ${bookList[i].getGenre()}, 
+        written in ${bookList[i].getDate()}, rated ${bookList[i].getRating()}`
+
+    }
+
+    
+
 }
 
 window.onload = function() {
-    this.document.getElementById("lottery-btn").onclick = lottery 
-    this.quotes() //  makes sure a quote is on the page from the start
-    this.setInterval(this.quotes,2000) //set interval for 2 sec
-
-
+    this.displayBooks()
 
 }
