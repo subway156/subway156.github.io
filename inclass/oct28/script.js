@@ -19,6 +19,10 @@ async function displayShoe() {
     let content =  document.getElementById("content")
     content.append(section)
 
+    for(i in shoeJson) {
+        let shoe = shoesjson[i]
+    }
+
 
 }
 
