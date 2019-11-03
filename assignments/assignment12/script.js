@@ -10,19 +10,22 @@ async function displayMovies() {
 
 }
 
-
-// TODO: finish get method
 function getMovieItem(movie){
+
     let movieSection = document.createElement("section")
     movieSection.className = "movie"
+
     let movieTitle = document.createElement("h3")
     movieSection.append(movieTitle)
     movieTitle.innerHTML = movie.title
-    movieSection.append(createShoeObject(movie.director))
-    movieSection.append(createShoeObject(movie.actors))
-    movieSection.append(createShoeObject(movie.year))
-    movieSection.append(createShoeObject(movie.director))
+    movieSection.append(createShoeObject('Director ' + movie.director))
+    movieSection.append(createShoeObject('Actors: ' + movie.actors))
+    movieSection.append(createShoeObject('Year: ' + movie.year))
+    movieSection.append(createShoeObject('Genre: ' + movie.genres))
+    movieSection.append(createShoeObject('Description: ' + movie.description))
+    // img
 
+    return movieSection;
 }
 
 function createShoeObject(text) {
