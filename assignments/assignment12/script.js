@@ -15,6 +15,12 @@ function getMovieItem(movie){
     let movieSection = document.createElement("section")
     movieSection.className = "movie"
 
+    // movie images
+    let movieSrc = movie.img
+    let moviePic = document.createElement('img')
+    moviePic.src = 'https://portiaportia.github.io/csce242/json/'+movieSrc
+    movieSection.append(moviePic)
+
     let movieTitle = document.createElement("h3")
     movieSection.append(movieTitle)
     movieTitle.innerHTML = movie.title
@@ -23,7 +29,7 @@ function getMovieItem(movie){
     movieSection.append(createShoeObject('Year: ' + movie.year))
     movieSection.append(createShoeObject('Genre: ' + movie.genres))
     movieSection.append(createShoeObject('Description: ' + movie.description))
-    // img
+
 
     return movieSection;
 }
