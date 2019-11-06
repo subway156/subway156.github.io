@@ -1,3 +1,12 @@
 body{
-    background: blue;
+    background: lightblue;
+}
+
+.cake{
+    background: lightcoral;
+    width: 60%;
+    margin:auto;
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 10px;
 }
