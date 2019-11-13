@@ -23,7 +23,7 @@ function getShoeItem(shoe){
 
 }
     // loop through reviews and add them as a bulleted list
-function createReviewsList(review)
+function createReviewsList(review){
     let ulElem = document.createElement('ul')
     for(i in shoe.reviews){
         let liElem = document.createElement('li')
