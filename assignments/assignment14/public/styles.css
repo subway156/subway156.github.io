@@ -1,0 +1,23 @@
+body {
+    background: gainsboro;
+}
+
+#cars {
+    width:80%;
+    margin:auto;
+}
+
+.car {
+    padding:10px;
+    margin:10px;
+    background:lightblue;
+    border:3px solid white;
+}
+
+.cars-form {
+    width:40%;
+    background:grey;
+    border:3px solid black;
+    padding:10px;
+    margin:10px auto;
+}
