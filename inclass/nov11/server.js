@@ -66,19 +66,16 @@ app.put('/api/songs/:id', (req, res)=>{
     const requestedId = parseInt(req.params.id);
     const song = songs.find(s =>s.id === requestedId);
     const result = validateSong(req.body);
-
     // no song w matching id in array
     if(!song) {
         res.status(404).send(`The song with id ${requestedId} was not found`);
         return;
     }
-
     // if schema does not match send an error
     if(result.error){
         res.status(400).send(result.error.details[0].message);
         return
     }
-
     //  update
     song.name = req.body.name
     song.singer = req.body.singer
